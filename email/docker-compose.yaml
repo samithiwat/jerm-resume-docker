@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  email:
+    image: ghcr.io/miello/cloud-final-email:latest
+    container_name: jerm-resume-email
+    restart: unless-stopped
+    env_file:
+      - .env
